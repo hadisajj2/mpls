@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainMenuController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("mapTitle")!
+        return cell
+    }
 
 }
 
