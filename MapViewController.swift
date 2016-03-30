@@ -67,7 +67,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         mymap.mapType = MKMapType.Standard
         mymap.showsUserLocation = true
         mymap.setUserTrackingMode(MKUserTrackingMode.Follow, animated: false)
-        mymap.scrollEnabled = false
+        mymap.scrollEnabled = true
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
